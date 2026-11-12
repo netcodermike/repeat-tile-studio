@@ -1,0 +1,16 @@
+{
+  "name": "repeat-tile-studio",
+  "productName": "Repeat Tile Studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Design seamless repeating tiles with rotating petal, diamond, or arch motifs, color controls, and a reusable PNG export.",
+  "main": "main.cjs",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "test": "electron . --verify --disable-gpu"
+  },
+  "devDependencies": {
+    "electron": "45.3.0"
+  }
+}

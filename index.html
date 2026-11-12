@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; base-uri 'none'; form-action 'none'">
+  <title>Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <header><div class="identity"><span class="mark" aria-hidden="true"></span><div><h1></h1><p id="subtitle"></p></div></div><div id="actions"></div></header>
+  <main>
+    <section class="workspace" aria-label="Artwork">
+      <div class="workspace-title"><h2 id="view-label">Preview</h2><span id="detail"></span></div>
+      <div class="viewport"><canvas width="1000" height="640" aria-label="Artwork preview"></canvas></div>
+      <p id="hint"></p>
+    </section>
+    <aside aria-label="Editing tools"><h2 id="tool-label">Tools</h2><div id="controls"></div></aside>
+  </main>
+  <footer><span id="status" role="status"></span><span id="format"></span></footer>
+</body>
+</html>
