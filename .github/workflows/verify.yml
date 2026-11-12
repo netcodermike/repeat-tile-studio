@@ -19,5 +19,11 @@ jobs:
       - run: npm ci
       - if: runner.os == 'Windows'
         run: npm test
+      - name: Prepare Chromium sandbox on Linux
+        if: runner.os == 'Linux'
+        run: |
+          node node_modules/electron/install.js
+          sudo chown root:root node_modules/electron/dist/chrome-sandbox
+          sudo chmod 4755 node_modules/electron/dist/chrome-sandbox
       - if: runner.os == 'Linux'
         run: xvfb-run -a npm test

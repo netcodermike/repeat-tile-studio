@@ -13,7 +13,7 @@ npm ci
 npm start
 ```
 
-The first command installs the pinned Electron runtime. The second opens the desktop window. All artwork is processed locally. The app requires no account or API key.
+The first command installs the locked dependencies. The second opens the desktop window and may download the pinned Electron runtime on first launch. All artwork is processed locally. The app requires no account or API key.
 
 ## Use the app
 
